@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Celebrate Chagg's birthday with the Eboy Token prize wheel."
+    />
+    <title>Happy Birthday Chagg</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="Happy Birthday Chagg home">
+          <span class="brand-mark">C</span>
+          <span>CHAGG DAY</span>
+        </a>
+        <p class="status"><span></span> Birthday machine online</p>
+      </header>
+
+      <section class="hero">
+        <div class="intro">
+          <p class="eyebrow">June 10 · Chagg's birthday banner</p>
+          <h1>Happy Birthday,<br /><em>Chagg.</em></h1>
+          <p class="lede">
+            Good Luck, Eboy
+          </p>
+
+          <div class="odds-card">
+            <div>
+              <span class="odds-label">Spin cost</span>
+              <strong>1 × EBOY TOKEN</strong>
+            </div>
+            <div>
+              <span class="odds-label">Legendary rate</span>
+              <strong>0.5% EACH</strong>
+            </div>
+            <div>
+              <span class="odds-label">Rerolls available</span>
+              <strong id="rerollsValue" aria-live="polite">10 / 10</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="machine" aria-label="Chagg birthday prize spinner">
+          <div class="machine-header">
+            <span>BIRTHDAY SELECTOR</span>
+            <span class="machine-id">CHAGG 2026</span>
+          </div>
+
+          <div class="wheel-stage">
+            <div class="pointer" aria-hidden="true"></div>
+            <div class="wheel-shadow"></div>
+            <div class="wheel" id="wheel">
+              <span class="wheel-label label-0">33% · VALORANT POINTS<br />$25</span>
+              <span class="wheel-label label-1">33% · TFT POINTS<br />$25</span>
+              <span class="wheel-label label-2">33% · RIOT POINTS<br />$25</span>
+              <span class="wheel-label rare-label label-3">0.5% · DUO<br />GENE KAI'SA</span>
+              <span class="wheel-label rare-label label-4">0.5% · TERRARIA<br />HIMMEL LARP</span>
+            </div>
+            <button class="spin-button" id="spinButton" type="button">
+              <span>FIRST<br />SPIN</span>
+            </button>
+          </div>
+
+          <div class="result" id="result" aria-live="polite">
+            <span class="result-kicker">BIRTHDAY PULL</span>
+            <strong>Awaiting Chagg</strong>
+          </div>
+
+          <p class="keyboard-hint" id="spinHint">
+            Each next spin rerolls your current result
+          </p>
+        </div>
+      </section>
+
+      <section class="loot-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Chagg's birthday banner</p>
+            <h2>Possible presents</h2>
+          </div>
+          <p>Legendary presents are listed at 0.5% each. Birthday luck only.</p>
+        </div>
+
+        <div class="loot-grid">
+          <article class="loot-card coral">
+            <span class="loot-number">01</span>
+            <div class="loot-art logo-art valorant-art">
+              <img
+                src="assets/presents/valorant.png"
+                alt="Valorant logo"
+                loading="lazy"
+              />
+            </div>
+            <h3>Valorant Points</h3>
+            <p>$25 · Digital currency</p>
+            <span class="rarity">MYTHIC · 33%</span>
+          </article>
+          <article class="loot-card yellow">
+            <span class="loot-number">02</span>
+            <div class="loot-art logo-art tft-art">
+              <img
+                src="assets/presents/tft.png"
+                alt="Teamfight Tactics logo"
+                loading="lazy"
+              />
+            </div>
+            <h3>TFT Points</h3>
+            <p>$25 · Digital currency</p>
+            <span class="rarity">MYTHIC · 33%</span>
+          </article>
+          <article class="loot-card blue">
+            <span class="loot-number">03</span>
+            <div class="loot-art">
+              <img
+                src="assets/presents/league.jpg"
+                alt="League of Legends champion artwork"
+                loading="lazy"
+              />
+            </div>
+            <h3>Riot Points</h3>
+            <p>$25 · Digital currency</p>
+            <span class="rarity">MYTHIC · 33%</span>
+          </article>
+          <article class="loot-card purple">
+            <span class="loot-number">04</span>
+            <div class="loot-art kaisa-art">
+              <img
+                src="assets/presents/kaisa.jpg"
+                alt="Kai'Sa from League of Legends"
+                loading="lazy"
+              />
+            </div>
+            <h3>Duo with Gene Kai'sa</h3>
+            <p>1 session · Summoner's Rift</p>
+            <span class="rarity">LEGENDARY · 0.5%</span>
+          </article>
+          <article class="loot-card green">
+            <span class="loot-number">05</span>
+            <div class="loot-art terraria-art">
+              <img
+                src="assets/presents/terraria.jpg"
+                alt="Terraria pixel-art landscape and logo"
+                loading="lazy"
+              />
+            </div>
+            <h3>LARP as Himmel</h3>
+            <p>Terraria · Full commitment</p>
+            <span class="rarity">LEGENDARY · 0.5%</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="history-section">
+        <div>
+          <p class="eyebrow">Birthday log</p>
+          <h2>Reroll history</h2>
+        </div>
+        <ol class="history-list" id="historyList">
+          <li class="empty-history">Chagg's first Eboy Token is waiting.</li>
+        </ol>
+      </section>
+    </main>
+
+    <div class="modal" id="winModal" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal-backdrop"></div>
+      <div class="modal-card">
+        <button class="modal-close" id="modalClose" aria-label="Close result">×</button>
+        <div class="modal-reaction">
+          <img
+            id="reactionGif"
+            alt="Birthday spin reaction"
+          />
+        </div>
+        <div class="modal-details">
+          <p class="eyebrow">Birthday present acquired</p>
+          <div class="modal-sigil" id="modalSigil">R</div>
+          <h2 id="modalTitle">Riot Points $25</h2>
+          <p id="modalCopy">The wheel has spoken.</p>
+          <button class="modal-button" id="spinAgain" type="button">SPIN AGAIN</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
